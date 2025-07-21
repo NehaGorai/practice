@@ -1,13 +1,16 @@
 import React from 'react'
+import Card from './Card'
 
 function Dashboard({data}) {
-console.log(data)
+console.log("data",data)
     return (
         <>
-            <div className='font-bold text-2xl'>Dashboard</div>
-            <h1>Name: {data.name}</h1>
-            <h2>Email: {data.email}</h2>
-            <h3>Role: {data.role}</h3>
+        <Card data2={data}/>
+        <div className='bg-amber-100 w-max p-8'>
+        <h1>Dashboard</h1>
+        <div>This is the {data.name}'s Dashboard</div>
+        </div>
+
         </>
     )
 }

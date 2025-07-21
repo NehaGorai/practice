@@ -9,7 +9,9 @@ function App() {
   }
   return (
     <>
-      <Dashboard data={user} />
+<div className='bg-amber-400 p-8'>
+<Dashboard  data={user} />
+</div>
     </>
   )
 }
