@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 import React ,{createContext} from 'react'
 import Dashboard from './components/Dashboard'
 var Mydata=createContext()
 var Mydata2=createContext()
+=======
+import React, { createContext } from 'react'
+import Dashboard from './components/Dashboard'
+import Card from './components/Card'
+>>>>>>> c9fcc5cf94bb31ae41a5a8d49690319bc17b92f3
 
+var Mydata = createContext()
+var Mydata2 = createContext()
+var Mydata3 = createContext()
 function App() {
   const user = {
     name: "Neha Gorai",
@@ -28,4 +37,8 @@ function App() {
 }
 
 export default App
+<<<<<<< HEAD
 export {Mydata,Mydata2}
+=======
+export { Mydata,Mydata2, Mydata3 }
+>>>>>>> c9fcc5cf94bb31ae41a5a8d49690319bc17b92f3
