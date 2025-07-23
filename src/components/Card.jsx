@@ -1,14 +1,19 @@
 import React from 'react'
 import Details from './Details'
-function Card({data2}) {
-    console.log("data2",data2)
+import { Mydata2 } from '../App'
+function Card() {
   return (
 <>
-<Details data3={data2}/>
-<div className='bg-blue-100 w-max p-8'>
-        <h1>Card</h1>
-        <div>This is the {data2.name}'s Dashboard</div>
-        </div>
+<Details/>
+<Mydata2.Consumer>
+ {(val)=>{
+return(
+    <>
+    <h1>Email: {val.email}</h1></>
+)
+ }}
+</Mydata2.Consumer>
+
 </>
   )
 }
