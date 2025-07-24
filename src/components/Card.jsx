@@ -3,11 +3,9 @@ import Details from './Details'
 
 function Card() {
   return (
-<>
-<Details/>
-
-
-</>
+    <>
+      <Details />
+    </>
   )
 }
 
