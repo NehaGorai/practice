@@ -3,6 +3,7 @@ import {createContext} from 'react'
 //create provide consume
 var Mydata=createContext()
 var Mydata2=createContext()
+var Mydata3=createContext()
 function App() {
 const user={
   name:"Neha",
@@ -14,11 +15,14 @@ const user2={
   email:"usha@gmail.com",
   role:"Backend Developer"
 }
+const user3="HTML Developer"
   return (
     <>
        <Mydata.Provider value={user}>
        <Mydata2.Provider value={user2}>
-       <Dashboard />
+       <Mydata3.Provider value={user3}>
+       <Dashboard/>
+       </Mydata3.Provider>
        </Mydata2.Provider>
        </Mydata.Provider>
     </>
@@ -26,5 +30,5 @@ const user2={
 }
 
 export default App
-export {Mydata,Mydata2}
+export {Mydata,Mydata2,Mydata3}
 

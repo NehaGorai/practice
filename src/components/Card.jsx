@@ -1,10 +1,22 @@
 import React from 'react'
 import Details from './Details'
+import { Mydata3 } from '../App'
 
 function Card() {
   return (
     <>
-      <Details />
+     <Mydata3.Consumer>
+      {
+        (val)=>{
+          return(
+            <>
+            <h1>{val}</h1>
+            <Details/>
+            </>
+          )
+        }
+      }
+     </Mydata3.Consumer>
     </>
   )
 }
