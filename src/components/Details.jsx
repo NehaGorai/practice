@@ -1,28 +1,13 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import { Mydata, Mydata4 } from '../App'
 
 function Details() {
-
+var hello = useContext(Mydata)
+var hello2 = useContext(Mydata4)
     return (
         <>
-            <Mydata.Consumer>
-                {(val) => {
-                    return (
-                        <>
-                            <Mydata4.Consumer>
-                                {(vals) => (
-                                    <>
-                                        <h2>Function from Context</h2>
-                                        <button className='bg-green-400 px-4 border rounded-4xl' onClick={vals}>Click Me</button>
-                                        <h1> Object: {val.name}- {val.email} -{val.role}</h1>
-                                    </>
-                                    
-                                )}
-                            </Mydata4.Consumer>
-                        </>
-                    )
-                }}
-            </Mydata.Consumer>
+    <div>yess its {hello.name}</div>
+    <button onClick={hello2}>Click me</button>
         </>
 
     )
