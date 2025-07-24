@@ -6,15 +6,17 @@ import { Mydata2 } from '../App'
 function Dashboard() {
     return (
         <>
-            <Card />
             <Mydata2.Consumer>
                 {(val) => {
                     return (
                         <>
-                            <h1>Name: {val.name}</h1>
-                            <h1>Email: {val.email}</h1>
-                            <h1>Role: {val.role}</h1>
-                            
+                            <h1>Dashboard</h1>
+                            {val.map((item) => {
+                                return (
+                                    <h1 key={item}>{item}</h1>
+                                )
+                            })}
+                            <Card />
                         </>
                     )
                 }}

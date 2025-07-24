@@ -10,20 +10,17 @@ const user={
   email:"neha@gmail.com",
   role:"Frontend Developer"
 }
-const user2={
-  name:"Usha",
-  email:"usha@gmail.com",
-  role:"Backend Developer"
-}
-const user3="HTML Developer"
+const user3="This a String data comming from contextAPI"
+const user2=["item1","item2","item3"]
+
   return (
     <>
        <Mydata.Provider value={user}>
-       <Mydata2.Provider value={user2}>
        <Mydata3.Provider value={user3}>
+       <Mydata2.Provider value={user2}>
        <Dashboard/>
-       </Mydata3.Provider>
        </Mydata2.Provider>
+       </Mydata3.Provider>
        </Mydata.Provider>
     </>
   )
