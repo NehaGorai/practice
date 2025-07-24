@@ -2,6 +2,7 @@ import React from 'react'
 import Card from './Card'
 import { Mydata2 } from '../App'
 
+
 function Dashboard() {
     return (
         <>
@@ -13,6 +14,7 @@ function Dashboard() {
                             <h1>Name: {val.name}</h1>
                             <h1>Email: {val.email}</h1>
                             <h1>Role: {val.role}</h1>
+                            
                         </>
                     )
                 }}

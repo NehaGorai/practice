@@ -2,6 +2,7 @@ import React from 'react'
 import {Mydata} from '../App'
 
 
+
 function Details() {
 
     return (
