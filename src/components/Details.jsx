@@ -1,15 +1,22 @@
 import React from 'react'
+import {Mydata} from '../App'
 
 
-function Details({values3}) {
-    console.log(values3,"values3")
+function Details() {
 
     return (
         <>
-        <div>Details</div>
-        <div>Name:{values3.name}</div>
-        <div>Email:{values3.email}</div>
-        <div>Role:{values3.role}</div>
+        <Mydata.Consumer>
+            {(val)=>{
+                return(
+                    <>
+                    <h1>Name: {val.name}</h1>
+                    <h1>Email: {val.email}</h1>
+                    <h1>Role: {val.role}</h1>
+                    </>
+                )
+            }}
+        </Mydata.Consumer>
         </>
 
     )

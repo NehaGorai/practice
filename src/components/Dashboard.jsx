@@ -1,10 +1,10 @@
 import React from 'react'
 import Card from './Card'
 
-function Dashboard({values}) {
+function Dashboard() {
     return (
         <>
-        <Card values2={values} />
+        <Card />
         </>
     )
 }
