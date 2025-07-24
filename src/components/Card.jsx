@@ -1,10 +1,10 @@
 import React from 'react'
 import Details from './Details'
 
-function Card() {
+function Card({values2}) {
   return (
     <>
-      <Details />
+      <Details values3={values2} />
     </>
   )
 }
