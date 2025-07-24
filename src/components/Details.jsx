@@ -1,5 +1,5 @@
 import React from 'react'
-import {Mydata} from '../App'
+import { Mydata, Mydata4 } from '../App'
 
 
 
@@ -7,17 +7,23 @@ function Details() {
 
     return (
         <>
-        <Mydata.Consumer>
-            {(val)=>{
-                return(
-                    <>
-                    <h1>Name: {val.name}</h1>
-                    <h1>Email: {val.email}</h1>
-                    <h1>Role: {val.role}</h1>
-                    </>
-                )
-            }}
-        </Mydata.Consumer>
+            <Mydata.Consumer>
+                {(val) => {
+                    return (
+                        <>
+                            <Mydata4.Consumer>
+                                {(vals) => (
+                                    <>
+                                        <h2>Function from Context</h2>
+                                        <button className='bg-green-400 px-4 border rounded-4xl' onClick={vals}>Click Me</button>
+                                        <h1>{val.role}</h1>
+                                    </>
+                                )}
+                            </Mydata4.Consumer>
+                        </>
+                    )
+                }}
+            </Mydata.Consumer>
         </>
 
     )

@@ -4,6 +4,7 @@ import {createContext} from 'react'
 var Mydata=createContext()
 var Mydata2=createContext()
 var Mydata3=createContext()
+var Mydata4=createContext()
 function App() {
 const user={
   name:"Neha",
@@ -12,13 +13,18 @@ const user={
 }
 const user3="This a String data comming from contextAPI"
 const user2=["item1","item2","item3"]
+const user4=function(){
+  console.log("This is a function")
+}
 
   return (
     <>
        <Mydata.Provider value={user}>
        <Mydata3.Provider value={user3}>
        <Mydata2.Provider value={user2}>
+       <Mydata4.Provider value={user4}>
        <Dashboard/>
+       </Mydata4.Provider>
        </Mydata2.Provider>
        </Mydata3.Provider>
        </Mydata.Provider>
@@ -27,5 +33,5 @@ const user2=["item1","item2","item3"]
 }
 
 export default App
-export {Mydata,Mydata2,Mydata3}
+export {Mydata,Mydata2,Mydata3,Mydata4}
 
