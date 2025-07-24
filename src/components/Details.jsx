@@ -15,6 +15,7 @@ function Details() {
                                         <h2>Function from Context</h2>
                                         <button className='bg-green-400 px-4 border rounded-4xl' onClick={vals}>Click Me</button>
                                         <h1> Object: {val.name}- {val.email} -{val.role}</h1>
+                                        <h1>hello</h1>
                                     </>
                                 )}
                             </Mydata4.Consumer>
