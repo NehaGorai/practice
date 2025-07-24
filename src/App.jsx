@@ -1,6 +1,6 @@
 import Dashboard from './components/Dashboard'
 import {createContext} from 'react'
-//create provide consume
+//create provider consumer
 var Mydata=createContext()
 var Mydata2=createContext()
 var Mydata3=createContext()
@@ -16,7 +16,6 @@ const user2=["item1","item2","item3"]
 const user4=function(){
   console.log("This is a function")
 }
-
   return (
     <>
        <Mydata.Provider value={user}>
@@ -31,7 +30,6 @@ const user4=function(){
     </>
   )
 }
-
 export default App
 export {Mydata,Mydata2,Mydata3,Mydata4}
 

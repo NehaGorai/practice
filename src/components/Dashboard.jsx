@@ -10,10 +10,10 @@ function Dashboard() {
                 {(val) => {
                     return (
                         <>
-                            <h1>Dashboard</h1>
+                        
                             {val.map((item) => {
                                 return (
-                                    <h1 key={item}>{item}</h1>
+                                    <h1 key={item}>Array: {item}</h1>
                                 )
                             })}
                             <Card />

@@ -10,7 +10,7 @@ function Card() {
         (val)=>{
           return(
             <>
-            <h1>{val}</h1>
+            <h1>String: {val}</h1>
             <Details/>
             </>
           )
