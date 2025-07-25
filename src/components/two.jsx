@@ -1,11 +1,17 @@
 import React from 'react'
+import {MainContext} from '../Context/Main'
+import {useContext} from 'react'
 
-function two({val2}) {
-  return (
-  <>
-    <div>{val2.name}</div>
-    <div>{val2.age}</div></>
-  )
+
+function Two() {
+    const day=useContext(MainContext)
+
+    return (
+        <>
+   <h1>{day}</h1>
+    
+        </>
+    )
 }
 
-export default two
+export default Two

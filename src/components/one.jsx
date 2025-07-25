@@ -1,9 +1,9 @@
 import React from 'react'
 import Two from './two'
 
-function one({val}) {
+function one() {
   return (
-   <Two val2={val}/>
+   <Two />
   )
 }
 
